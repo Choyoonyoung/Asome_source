@@ -7,15 +7,16 @@
         android:layout_width="match_parent"
         android:layout_height="170dp"
         android:orientation="vertical"
-        android:layout_margin="15dp">
+        android:layout_margin="10dp">
 
         <TextView
             android:id="@+id/textTitle"
             android:layout_width="match_parent"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
+            android:layout_height="18dp"
+            android:padding="5dp"
             android:text="TitleEx"
+
             android:textColor="#000000"
             android:textSize="20sp"
             android:background="#2C6BF8"
@@ -30,5 +31,6 @@
             android:textSize="15sp"
             android:background="#F1F2F5"
             android:textColor="#000000"/>
+
     </LinearLayout>
 </LinearLayout>

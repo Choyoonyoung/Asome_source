@@ -15,8 +15,9 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="72dp"
-        android:text="TextView"
+        android:text="Asome"
         android:textSize="30dp"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,22 +43,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="아이디"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editText3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="비밀번호"
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Log In"
+            android:onClick="onLoginClicked"/>
     </LinearLayout>
 
     <LinearLayout
@@ -89,6 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="OR"
+            android:textColor="#000000"
             android:textAlignment="center" />
 
         <ImageView
@@ -123,13 +126,14 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Sign Up"
+            android:onClick="MovetoJoinClicked"/>
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Sign Up with Google" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

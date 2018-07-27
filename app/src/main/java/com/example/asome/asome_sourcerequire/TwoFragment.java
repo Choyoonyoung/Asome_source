@@ -1,5 +1,6 @@
 package com.example.asome.asome_sourcerequire;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -35,10 +36,10 @@ public class TwoFragment extends ListFragment implements  View.OnClickListener {
 
         pa = new ProjectAdapter();
         pa.addItem(new ProjectItem("projectA", "이 프로젝트는 프로젝트 A입니다.이 프로젝트는 프로젝트 A입니다.이 프로젝트는 프로젝트 A입니다."));
-        pa.addItem(new ProjectItem("projectA", "이 프로젝트는 프로젝트 A입니다.이 프로젝트는 프로젝트 A입니다.이 프로젝트는 프로젝트 A입니다."));
-        pa.addItem(new ProjectItem("projectA", "이 프로젝트는 프로젝트 A입니다.이 프로젝트는 프로젝트 A입니다.이 프로젝트는 프로젝트 A입니다."));
-        pa.addItem(new ProjectItem("projectA", "이 프로젝트는 프로젝트 A입니다.이 프로젝트는 프로젝트 A입니다.이 프로젝트는 프로젝트 A입니다."));
-        pa.addItem(new ProjectItem("projectA", "이 프로젝트는 프로젝트 A입니다.이 프로젝트는 프로젝트 A입니다.이 프로젝트는 프로젝트 A입니다."));
+        pa.addItem(new ProjectItem("projectB", "이 프로젝트는 B입니다.이 프로젝트는 B입니다.이 프로젝트는 B입니다.이 프로젝트는 B입니다."));
+        pa.addItem(new ProjectItem("projectC", "이 프로젝트는 프로젝트 C입니다.이 프로젝트는 프로젝트 C입니다.이 프로젝트는 프로젝트 C입니다."));
+        pa.addItem(new ProjectItem("projectD", "이 프로젝트는 프로젝트 D입니다.이 프로젝트는 프로젝트 D입니다.이 프로젝트는 프로젝트 D입니다."));
+        pa.addItem(new ProjectItem("projectE", "이 프로젝트는 프로젝트 E입니다.이 프로젝트는 프로젝트 E입니다.이 프로젝트는 프로젝트 E입니다."));
 
         gridView.setAdapter(pa);
         pa.notifyDataSetChanged();
@@ -48,7 +49,8 @@ public class TwoFragment extends ListFragment implements  View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-
+        Intent intent = new Intent(gridView.getContext(), NewProjectActivity.class);
+        startActivityForResult(intent, 100);
     }
 
     public class ProjectAdapter extends BaseAdapter {

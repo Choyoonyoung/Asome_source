@@ -20,9 +20,14 @@
         </activity>
         <activity
             android:name=".LogInActivity"
-            android:theme="@style/AppTheme" />
-        <activity   android:name=".MainActivity"
-                    android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity   android:name=".JoinActivity"
+                    android:theme="@style/AppTheme.NoActionBar" />
+        <activity   android:name=".NewProjectActivity"
+                    android:theme="@style/AppTheme.NoActionBar" ></activity>
     </application>
 
 </manifest>
