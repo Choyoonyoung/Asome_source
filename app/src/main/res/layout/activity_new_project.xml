@@ -4,6 +4,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".NewProjectActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/TitleForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Project Name" />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/nextbtn"
+                android:layout_width="115dp"
+                android:layout_height="42dp"
+                android:onClick="onNextClicked"
+                android:text="Next"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="209dp"
+                tools:layout_editor_absoluteY="212dp" />
+
+            <LinearLayout
+                android:id="@+id/AboutForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About" />
+
+                <EditText
+                    android:id="@+id/editText10"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/nextbtn2"
+                android:layout_width="115dp"
+                android:layout_height="42dp"
+                android:onClick="onNextClicked2"
+                android:text="Next"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="209dp"
+                tools:layout_editor_absoluteY="212dp" />
+
+            <LinearLayout
+                android:id="@+id/roleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="358dp">
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/addbtn"
+                android:layout_width="115dp"
+                android:layout_height="42dp"
+                android:text="Add Role"
+                android:visibility="gone"
+                android:onClick="addRoleClicked"
+                tools:layout_editor_absoluteX="209dp"
+                tools:layout_editor_absoluteY="212dp"/>
+            <Button
+                android:id="@+id/createbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="44dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="8dp"
+                android:onClick="onCreateClicked"
+                android:text="Create"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
 
 </android.support.constraint.ConstraintLayout>

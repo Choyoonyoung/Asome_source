@@ -24,10 +24,13 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity   android:name=".JoinActivity"
-                    android:theme="@style/AppTheme.NoActionBar" />
-        <activity   android:name=".NewProjectActivity"
-                    android:theme="@style/AppTheme.NoActionBar" ></activity>
+        <activity
+            android:name=".JoinActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewProjectActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RoleDetailDialogActivity"></activity>
     </application>
 
 </manifest>

@@ -84,4 +84,9 @@ public class TwoFragment extends ListFragment implements  View.OnClickListener {
 
         }
     }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
 }
