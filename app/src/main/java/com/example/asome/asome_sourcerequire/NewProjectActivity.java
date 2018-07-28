@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 public class NewProjectActivity extends AppCompatActivity {
    LinearLayout aboutForm;
    Animation translateDownAnim;
-   Button nextBtn,nextBtn2,addBtn,createBtn;
+   Button nextBtn,nextBtn2,addBtn,createBtn,detailBtn;
     LinearLayout roleLayout;
     Sub layout;
     @Override
@@ -26,6 +26,7 @@ public class NewProjectActivity extends AppCompatActivity {
         addBtn = findViewById(R.id.addbtn);
         createBtn = findViewById(R.id.createbtn);
         roleLayout = (LinearLayout)findViewById(R.id.roleLayout);
+        detailBtn = findViewById(R.id.detailBtn);
         translateDownAnim =  AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate_down);
     }
 
@@ -43,12 +44,14 @@ public class NewProjectActivity extends AppCompatActivity {
         roleLayout.setVisibility(View.VISIBLE);
         roleLayout.startAnimation(translateDownAnim);
         addBtn.setVisibility(View.VISIBLE);
-        createBtn.setVisibility(View.VISIBLE);
+        createBtn.setVisibility(View.GONE);
 
     }
     public void addRoleClicked(View view) {
         layout = new Sub(getApplicationContext());
         roleLayout.addView(layout);
+        /*여기다가 다이얼로그 이동 부분 추가*/
+
     }
 
     public void onCreateClicked(View view) {
