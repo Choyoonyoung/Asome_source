@@ -1,5 +1,6 @@
 package com.example.asome.asome_sourcerequire;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,7 +27,7 @@ public class NewProjectActivity extends AppCompatActivity {
         addBtn = findViewById(R.id.addbtn);
         createBtn = findViewById(R.id.createbtn);
         roleLayout = (LinearLayout)findViewById(R.id.roleLayout);
-        detailBtn = findViewById(R.id.detailBtn);
+
         translateDownAnim =  AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate_down);
     }
 
@@ -52,6 +53,13 @@ public class NewProjectActivity extends AppCompatActivity {
         roleLayout.addView(layout);
         /*여기다가 다이얼로그 이동 부분 추가*/
 
+        Button btn = (Button)layout.findViewById(R.id.detailBtn);
+        btn.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(NewProjectActivity.this, RoleDetailDialogActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void onCreateClicked(View view) {

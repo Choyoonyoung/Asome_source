@@ -30,7 +30,10 @@
         <activity
             android:name=".NewProjectActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".RoleDetailDialogActivity"></activity>
+        <activity
+            android:name=".RoleDetailDialogActivity"
+            android:theme="@android:style/Theme.Dialog" />
+
     </application>
 
 </manifest>
