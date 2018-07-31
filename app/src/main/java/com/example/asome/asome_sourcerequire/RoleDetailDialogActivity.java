@@ -12,31 +12,20 @@ import android.widget.TextView;
 
 public class RoleDetailDialogActivity extends Activity  {
         AutoCompleteTextView testTag;
-        TextView textView,showTag;
+        TextView showTag;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_role_detail_dialog);
 
-        showTag = findViewById(R.id.resultUser);
-
-        final HashTagAutoCompleteTextView textView=(HashTagAutoCompleteTextView) findViewById(R.id.user_tag);
-
-        HashTagSuggestAdapter adapter = new HashTagSuggestAdapter(this, android.R.layout.simple_dropdown_item_1line, USER_TAG);
-        adapter.setCusrsorPositionListener(new HashTagSuggestAdapter.CursorPositionListener() {
-            @Override
-            public int currentCursorPosition() {
-                 return textView.getSelectionStart();
-            }
-         });
-
-        textView.setAdapter(adapter);
 
         testTag = findViewById(R.id.test_tag);
         ArrayAdapter<String> Tadapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_dropdown_item_1line, USER_TAG);
         testTag.setAdapter(Tadapter);
+
+        showTag = findViewById(R.id.resultUser);
     }
 
 

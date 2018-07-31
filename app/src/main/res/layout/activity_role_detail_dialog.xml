@@ -28,11 +28,6 @@
                 android:text="팀원 역할 지정이 필요합니다."
                 />
 
-            <com.example.asome.asome_sourcerequire.HashTagAutoCompleteTextView
-                android:id="@+id/user_tag"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:visibility="visible" />
 
             <LinearLayout
                 android:layout_width="match_parent"
